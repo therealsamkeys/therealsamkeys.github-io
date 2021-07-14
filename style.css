@@ -1,0 +1,232 @@
+*{margin:0;
+    padding: 0;
+}
+.header{
+    background-repeat:no-repeat;
+background-image: linear-gradient(rgba(81, 84, 97, 0.7),rgba(74, 80, 104, 0.7)),url(image/1.jpeg);
+background-position: center;
+background-size: 100%;
+position: relative;
+    min-height: 100vh;
+    width:100%;
+    }
+
+nav{
+display: flex;
+padding: 2% 6%;
+justify-content: space-between;
+align-items: center
+    }
+nav img{
+    width:150px;
+    margin-top: -20%;
+    margin-left: -55%;
+}
+ .nav-links{
+     flex:1;
+     text-align:right;
+ }   
+
+ .nav-links ul li{
+    list-style:none;
+    display: inline-block;
+    padding:8px 12px;
+    position:relative;
+}
+.nav-links ul li a{
+    color:#fff;
+    text-decoration:none;
+    font: size 12px;
+    font-family: arson;
+   font-weight: bold;
+   text-align: right;
+   margin-left: 10px;
+padding: top 50px;
+}
+.nav-links ul li::after{
+    content:none;
+    width:0%;
+    height: 2px;
+    background:#f44336;
+    display: block;
+    margin:auto;
+    transition:0.4s;
+}
+.nav-links ul li:hover::after{
+    width:100%;
+}
+
+.text-box{
+width:90%;
+color:#fff;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%); 
+text-align: center; 
+}
+.text-box h1{
+    font-size: 52px;
+    font-family: tahoma;
+}
+.text-box p{
+    margin:20px 0 40px;
+    font-size: 16px;
+    color:#fff;
+    font-family:avalon;
+    line-height: 20px;
+}
+text-box h2{
+    margin:10px 0 40px;
+    font-size: 16px;
+    color:#fff;
+    font-family:arson;
+    font-weight: bold;
+}
+.banner-btn{
+    margin: 70px auto 0;
+}
+.banner-btn a{
+    font-family: bahamas;
+    text-decoration:rgb(206, 206, 43);
+    display: inline-block;
+    width: 150px;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: rgb(0, 0, 0);
+    border: .5px solid rgb(255, 255, 255);
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+    background: rgb(238, 233, 233);
+}
+.banner-btn a span{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgb(58, 55, 55);
+    z-index: -1;
+    transition: 1.0s;
+}
+.banner-btn a:hover span{
+    width: 100%;
+}
+
+
+/* -------Course------ */
+
+
+
+.course{
+    width:80%;
+    margin:auto;
+    text-align:center;
+    padding-top:100px;
+}
+h1{
+    font-size:36px;
+    font-weight:600;
+}
+p{
+    color:#777;
+    font-size: 14px;
+font-weight: 300;
+line-height: 10px;
+padding:10px;
+}
+
+.row{
+    font-family: Arson;
+    margin-top: 5%;
+    display:flex;
+    justify-content: space-between;
+    word-spacing: 10px;
+    line-height:15px;
+
+}
+.course-col{
+    flex-basis:31%;
+    background:#fff3f3;
+    border-radius:10px;
+    margin-bottom: 5%;
+    padding:20px 12px;
+    box-sizing:border-box;
+    transition: 0.5s;
+}
+h3{
+text-align: center;
+font-weight:600;
+margin:10px 0;
+}
+.course-col:hover{
+    box-shadow:0 0 20px 0px rgba(0,0,0,0.2);
+
+}
+
+/* ----campus------- */
+.campus{
+    width:80%;
+    margin:auto;
+    text-align:center;
+    padding-top:50px;
+    font-family: bangle;
+}
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position:relative;
+    overflow: hidden;
+    margin-left:-150px;
+}
+    .campus-col img{
+        width:100%;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    transition: 0.5s;
+    }
+    .layer:hover{
+        background: rgba(12, 107, 44, 0.7);
+    }
+    .layer h3{
+        width:100%;
+        font-weight: 500;
+        color:#fff;
+        font-size: 26px;
+        bottom:0;
+        left:50%;
+        transform:translateX(-50%);
+        position:absolute;
+        opacity:0;
+    transition:0.5s;
+    }
+    .layer:hover h3{
+        bottom: 49%;
+        opacity:1;
+    }
+
+    /* ---call to action----- */
+    .cta{
+        margin: 100px auto;
+        width:80%;
+        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(9.jpeg);
+        background-position: center;
+        background-size: cover;
+        border-radius:10px;
+        text-align: center;
+        padding: 100px 0;
+    }
+    .cta h1{
+        color:#fff;
+        margin-bottom: 40px;
+        padding:0;
+    }
+  
